@@ -8,10 +8,246 @@
         <link rel="stylesheet" href="https://fonts.google.com/specimen/Ovo?preview.script=Latn.family=Ovo">
 
         <style>
-            
+            /* Style the navigation*/
+            nav {
+                height: 200px;
+                width: 100%;
+                background-color: rgb(125, 183, 92);
+
+                display: flex;
+                align-items: center;
+            }
+            .column {
+                width: 100%;
+            }
+            .row {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+            .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4 {
+                display: flex;
+                align-items: center;
+            }
+            .col-lg-3 {
+                gap: 30px;
+            }
+            .navbtn {
+                font-family: Ovo;
+                color: black;
+                font-size: 1.5em;
+                text-decoration: none;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-button {
+                width: 220px;
+                height: 80px;
+                border: none;
+                border-radius: 45px;
+                background-color: white;
+                font-family: Ovo;
+                font-size: 1.5em;
+                cursor: pointer;
+            }
+            .my-dropdown-menu {
+                display: none;
+                position: absolute;
+                top: 80px;
+                width: 220px;
+                background-color: white;
+                border-radius: 15px;
+                padding: 10px;
+            }
+            .my-dropdown-menu a {
+                display: block;
+                padding: 10px;
+                color: black;
+                text-decoration: none;
+            }
+            .my-dropdown-menu a:hover {
+                background-color: rgb(125, 183, 92);
+            }
+            .dropdown:hover .my-dropdown-menu {
+                display: block;
+            }
+
+            /* Style the section*/
+            section {
+                height: 6000px;
+                width: 100%;
+            }
+            .blogbild {
+                position: relative;
+            }
+            .blogbild-background {
+                height: 500px;
+                object-fit: cover;
+            }
+            .blogbild img {
+                display: block;
+                width: 100%;
+            }
+            .blogbild h2 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+
+                margin: 0;
+                padding: 15px;
+                
+                text-align: center;
+                color: black;
+                background-color: rgba(255, 255, 255, 0.7);
+
+                font-family: Ovo;
+                font-size: 2em;
+            }
+            .bildtext {
+                margin-top: 10px;
+                margin-bottom: 30px;
+
+                color: black;
+                font-family: Ovo;
+                font-size: 1em;
+            }
+            .column-blog {
+                position: relative;
+                margin-top: -300px;
+            }
+
+            /* Style the footer*/
+            footer {
+                height: 300px;
+                width: 100%;
+                background-color: rgb(125, 183, 92);
+                margin-bottom: 100px;
+                padding-top: 55px;
+            }
+            .social-icons {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
         </style>
     </head>
     <body>
+        <!--The Navigation-->
+        <nav>
+            <div class="column-blog">
+                <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-1">
+                <img src="../img/logo/logo.png" alt="The logo fo the website."></div>
+                <div class="col-lg-3">
+                    <a class="navbtn" href="#">INDEX</a>
+                    <a class="navbtn" href="#">KONTAKT</a>
+                    <a class="navbtn" href="#">BLOG</a>
+                </div>
+                    
+                <div class="col-lg-4"></div>
+                <div class="col-lg-2">
+                    <div class="dropdown">
+                    <button class="dropdown-button">DROPDOWN</button>
+
+                        <div class="my-dropdown-menu">
+                            <a class="navbtn" href="#">INDEX</a>
+                            <a class="navbtn" href="#">KONTAKT</a>
+                            <a class="navbtn" href="#">BLOG</a>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <img src="../img/imgBlog/Background/Tiger-rest-look-back-head_1920x1440.jpg" class="w-100" alt="tiger">
+        <div class="column-blog">
+            <div class="row">
+                <div class="col-lg-3"></div>
+
+                <div class="col-lg-3">
+                    <div class="blogbild">
+                    <img src="../img/imgBlog/1.jpg" class="w-100" alt="guinea pig">
+                    <h2>MEERSCHWEINCHEN</h2>
+                    </div>
+
+                    <p class="bildtext">
+                        Die Meerschweinchen, lateinisch Cavia aparea porcellus, kommen aus den
+                        südamerikanischen Anden, wo die Temperatur relativ konstant und das Klima recht trocken ist.
+                        Sie wurden schon vor mehr als 3000 Jahren domestiziert, und kamen im 16. Jahrhundert auch nach
+                        Europa.Man nimmt an, dass sie bei uns Meerschweinchen heissen,
+                        weil sie übers Meer kamen und quieken wie ein Schweinchen.</p>
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="../img/imgBlog/2.jpg" class="w-100" alt="elephant">
+                    <h2>ELEFANT</h2>
+                </div>
+
+                <p class="bildtext">duschen und trompeten.
+                Im Gegensatz zum Asiatischen Elefanten besitzen Afrikanische Elefanten gleich zwei fingerartigen
+                Muskelfortsätze am Rüssel, mit deren Hilfe sie Dinge greifen können. Diese stehen sich am Ende des
+                Rüssels gegenüber.
+                Insgesamt gibt es drei Elefanten-Arten weltweit: den Asiatischen Elefanten (Elephas maximus), den
+                Afrikanischen Elefanten (Loxodonta africana) und der Waldelefanten (Loxodonta cyclotis).</p>
+
+                <div class="col-lg-3"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3">
+                    <img src="../img/imgBlog/3.jpg" class="w-100" alt="dog">
+                    <h2></h2>
+                </div>
+                <div class="col-lg-3">
+                    <img src="../img/imgBlog/4.jpg" class="w-100" alt="dolphin">
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3">
+                    <img src="../img/imgBlog/5.jpg" class="w-100" alt="penguin">
+                </div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+
+        </section>
+
+        <footer>
+            <div class="column">
+                <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2">
+                <p>Kontakt <br><br>
+                Noser Young AG <br>
+                Herostrasse 12 <br>
+                CH-8048 Zürich <br><br>
+                zuerich@noseryoung.ch <br>
+                +41 31 917 53 80</p>
+                </div>
+                <div class="col-lg-5"></div>
+                <div class="col-lg-3 social-icons">
+                    <img src="../img/socialMediaIcons/facebook.png" width="40px" height="40px" alt="facebook icon">
+                    <img src="../img/socialMediaIcons/instagram.png" width="40px" height="40px" alt="instagram icon">
+                    <img src="../img/socialMediaIcons/pinterest.png" width="40px" height="40px" alt="pinterest icon">
+                    <img src="../img/socialMediaIcons/twitter.png" width="40px" height="40px" alt="twitter icon">
+                </div>
+                <div class="col-lg-1"></div>
+                </div>
+            </div>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
