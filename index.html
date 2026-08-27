@@ -8,6 +8,121 @@
         <link rel="stylesheet" href="https://fonts.google.com/specimen/Ovo?preview.script=Latn.family=Ovo">
 
         <style>
+/*Handy*/
+            @media (max-width: 576px) {
+                nav {
+                height: 200px;
+                width: 100%;
+                background-color: rgb(125, 183, 92);
+
+                display: flex;
+                align-items: center;
+            }
+            .column {
+                width: 100%;
+            }
+            .row {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+            .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4 {
+                display: flex;
+                align-items: center;
+            }
+            .col-lg-3 {
+                gap: 30px;
+            }
+            .navbtn {
+                font-family: Ovo;
+                color: black;
+                font-size: 1.5em;
+                text-decoration: none;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                z-index: 1000;
+            }
+            .dropdown-button {
+                width: 220px;
+                height: 80px;
+                border: none;
+                border-radius: 45px;
+                background-color: white;
+                font-family: Ovo;
+                font-size: 1.5em;
+                cursor: pointer;
+            }
+            .my-dropdown-menu {
+                display: none;
+                position: absolute;
+                top: 80px;
+                width: 220px;
+                background-color: white;
+                border-radius: 15px;
+                padding: 10px;
+                z-index: 1001;
+            }
+            .my-dropdown-menu a {
+                display: block;
+                padding: 10px;
+                color: black;
+                text-decoration: none;
+            }
+            .my-dropdown-menu a:hover {
+                background-color: rgb(125, 183, 92);
+            }
+            .dropdown:hover .my-dropdown-menu {
+                display: block;
+            }
+
+            /* Style the section*/
+            section {
+                height: 2000px;
+                width: 100%;
+            }
+            p {
+                font-family: Ovo;
+                
+                color: rgb(255, 255, 255);
+            }
+            .blogbutton {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                margin: 0 auto;
+
+                font-family: Ovo;
+                background-color: white;
+                color: black;
+                font-size: 50px;
+                height: 80px;
+                width: 220px;
+                border-radius: 45px;
+                text-decoration: none;
+
+            }
+            .carousel-caption {
+                text-align: center;
+            }
+
+            /* Style the footer*/
+            footer {
+                height: 300px;
+                width: 100%;
+                background-color: rgb(125, 183, 92);
+                margin-bottom: 100px;
+                padding-top: 55px;
+            }
+            .social-icons {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+
             /* Style the navigation*/
             nav {
                 height: 200px;
@@ -83,7 +198,6 @@
             }
             p {
                 font-family: Ovo;
-                font-size: 200px;
                 color: rgb(255, 255, 255);
             }
             .blogbutton {
