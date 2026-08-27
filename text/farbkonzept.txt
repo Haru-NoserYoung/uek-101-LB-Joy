@@ -1,0 +1,5 @@
+My colors are:
+nav: rgb(125, 183, 92)
+text: white and black
+blog background text: rgba(36, 35, 35, 0.7)
+contact background: rgb(165, 42, 42)
