@@ -22,7 +22,7 @@
             }
             .row {
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 width: 100%;
             }
             .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4 {
@@ -89,10 +89,12 @@
             .blogbild img {
                 display: block;
                 width: 100%;
+                height: 300px;
+                object-fit: cover;
             }
             .blogbild h2 {
                 position: absolute;
-                bottom: 0;
+                top: 231px;
                 left: 0;
                 width: 100%;
 
@@ -100,11 +102,18 @@
                 padding: 15px;
                 
                 text-align: center;
-                color: black;
-                background-color: rgba(255, 255, 255, 0.7);
+                color: white;
+                background-color: rgba(36, 35, 35, 0.7);
 
                 font-family: Ovo;
                 font-size: 2em;
+            }
+            .blogbild p {
+                margin: 0;
+                padding: 10px;
+                color: black;
+                background-color: rgba(36, 35, 35, 0.7);
+                height: 250px;
             }
             .bildtext {
                 margin-top: 10px;
@@ -117,6 +126,9 @@
             .column-blog {
                 position: relative;
                 margin-top: -300px;
+            }
+            .column-blog .row {
+                margin-bottom: 50px;
             }
 
             /* Style the footer*/
@@ -176,47 +188,83 @@
                     <div class="blogbild">
                     <img src="../img/imgBlog/1.jpg" class="w-100" alt="guinea pig">
                     <h2>MEERSCHWEINCHEN</h2>
-                    </div>
 
                     <p class="bildtext">
                         Die Meerschweinchen, lateinisch Cavia aparea porcellus, kommen aus den
                         südamerikanischen Anden, wo die Temperatur relativ konstant und das Klima recht trocken ist.
                         Sie wurden schon vor mehr als 3000 Jahren domestiziert, und kamen im 16. Jahrhundert auch nach
                         Europa.Man nimmt an, dass sie bei uns Meerschweinchen heissen,
-                        weil sie übers Meer kamen und quieken wie ein Schweinchen.</p>
+                        weil sie übers Meer kamen und quieken wie ein Schweinchen.</p></div>
                 </div>
 
                 <div class="col-lg-3">
+                    <div class="blogbild">
                     <img src="../img/imgBlog/2.jpg" class="w-100" alt="elephant">
                     <h2>ELEFANT</h2>
-                </div>
 
                 <p class="bildtext">duschen und trompeten.
                 Im Gegensatz zum Asiatischen Elefanten besitzen Afrikanische Elefanten gleich zwei fingerartigen
                 Muskelfortsätze am Rüssel, mit deren Hilfe sie Dinge greifen können. Diese stehen sich am Ende des
                 Rüssels gegenüber.
                 Insgesamt gibt es drei Elefanten-Arten weltweit: den Asiatischen Elefanten (Elephas maximus), den
-                Afrikanischen Elefanten (Loxodonta africana) und der Waldelefanten (Loxodonta cyclotis).</p>
+                Afrikanischen Elefanten (Loxodonta africana) und der Waldelefanten (Loxodonta cyclotis).</p></div>
+            </div>
 
                 <div class="col-lg-3"></div>
             </div>
 
             <div class="row">
                 <div class="col-lg-3"></div>
+
                 <div class="col-lg-3">
+                    <div class="blogbild">
                     <img src="../img/imgBlog/3.jpg" class="w-100" alt="dog">
-                    <h2></h2>
+                    <h2>HUND</h2>
+
+                    <p>Ein Hund ist ein Nachfahre des Wolfes. Er hat sich über tausende von Jahren dem
+                    Menschen und dessen Lebensstil angepasst.
+                    Zeit, Evolution und Intelligenz haben aus ihm ein Lebewesen geschaffen, das gelernt hat wie es den
+                    Menschen manipulieren kann.
+                    Kaum ein anderes Tier hat es nicht nur in unsere Wohnungen geschafft, sondern bis auf unsere Couch
+                    oder sogar bis in unser Bett.</p>
+                    </div>
                 </div>
+
                 <div class="col-lg-3">
+                    <div class="blogbild">
                     <img src="../img/imgBlog/4.jpg" class="w-100" alt="dolphin">
+                    <h2>DELFIN</h2>
+
+                    <p>Delfin ist nicht gleich Delfin. Es gibt rund 40 Delfinarten. Sie unterscheiden sich nicht nur in Größe,
+                    Gewicht, Ernährung, Verhalten, sondern auch in ihrem Aussehen und der Farbe.
+                    Sie können z. B. weiß, perlenfarben, rosa, braun, grau, blau und schwarz sein. Einige Delfine tragen das
+                    Wort „Wal“ in ihrem Namen, was durchaus verwirrend ist.
+                    So ist zum Beispiel der Schwertwal, also der Orca, auch ein Delfin. Die meisten Menschen denken aber an
+                    den „Großen Tümmler“, wenn sie von Delfinen reden.</p>
+                    </div>
                 </div>
+
                 <div class="col-lg-3"></div>
             </div>
 
             <div class="row">
                 <div class="col-lg-3"></div>
+
                 <div class="col-lg-3">
+                    <div class="blogbild">
                     <img src="../img/imgBlog/5.jpg" class="w-100" alt="penguin">
+                    <h2>PINGUIN</h2>
+
+                    <p>Auf lateinisch bedeutet "penguis" soviel wie fett oder wohlgenährt. Das ist ein Kennzeichen
+                    von Alkenvögeln und Lummen, also Vögeln, die im hohen Norden leben.
+                    Und obwohl diese Vögel mit den Pinguinen überhaupt nicht verwandt sind, übertrugen die Seefahrer den
+                    Namen einfach auch auf alle ähnlich aussehenden Vögel, die eine dicke Speckschicht gegen die Kälte
+                    trugen.
+                    Pinguine leben aber nicht nur am Südpol, genau genommen sind sie in allen Ozeanen der Südhalbkugel
+                    zu finden. Die flugunfähigen Vögel besiedeln auch die Küstenwüsten Chiles und die Regenwälder
+                    Neuseelands.
+                    </p>
+                    </div>
                 </div>
                 <div class="col-lg-3"></div>
                 <div class="col-lg-3"></div>
